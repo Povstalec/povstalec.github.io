@@ -36,38 +36,38 @@
 			<div id = "inputFields">
 				<!-- Name -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>name</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Name of the Solar System is used for translations</span> </div>
+					<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>name</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Name of the Solar System is used for translations</span> </div>
 					<div id = "inputType" style = "color:#00aaff"><b>String</b></div>
 					<input type = "text" id = "name" name = "name" style = "min-width:300px" placeholder = "solar_system.namespace.name" data-valid = false>
 				</div>
 				
 				<!-- Symbols -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>symbols</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Symbols every Stargate generated in this Solar System will use</span> </div>
+					<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>symbols</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Symbols every Stargate generated in this Solar System will use</span> </div>
 					<div id = "inputType" style = "color:#00aaff"><b>Resource Location</b></div>
 					<input type = "text" id = "symbols" name = "symbols" style = "min-width:260px" placeholder = "namespace:symbols" data-valid = false>
 				</div>
 				
 				<!-- Point Of Origin -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>point_of_origin</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Point of Origin every Stargate (that's set to use local Point of Origin) in this Solar System will use</span> </div>
+					<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>point_of_origin</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Point of Origin every Stargate (that's set to use local Point of Origin) in this Solar System will use</span> </div>
 					<div id = "inputType" style = "color:#00aaff"><b>Resource Location</b></div>
 					<input type = "text" id = "point_of_origin" name = "point_of_origin" style = "min-width:260px" placeholder = "namespace:point_of_origin" data-valid = false>
 				</div>
 				
 				<!-- Symbol Prefix -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>symbol_prefix</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">First Symbol of this Solar System's randomized Extragalactic Address</span> </div>
+					<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>symbol_prefix</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">First Symbol of this Solar System's randomized Extragalactic Address</span> </div>
 					<div id = "inputType" style = "color:#cb6b1f"><b>int</b></div>
 					<input type="number" id = "symbol_prefix" name = "symbol_prefix" placeholder = 1 data-valid = false>
 				</div>
 				
 				<!-- Extragalactic Address -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip" style = "min-height:92px"> <div id = "info">ⓘ</div> <b>extragalactic_address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">The Extragalactic Address of this Solar System and whether it can be randomized</span> </div>
+					<div id = "inputName" class = "tooltip" style = "min-height:92px"> <div id = "info"><sup>?</sup></div> <b>extragalactic_address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">The Extragalactic Address of this Solar System and whether it can be randomized</span> </div>
 					<div class = "multiInput" id = "extragalactic_address">
 						<div class = "clearfix">
-							<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Numerical values of the symbols in the Address, each number must be unique</span> </div>
+							<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Numerical values of the symbols in the Address, each number must be unique</span> </div>
 							<div id = "inputType" style = "color:#cb6b1f"><b>int[ ]</b></div>
 							<input type="number" class = "address" id = "symbol1" placeholder = 1 onchange = "drawOutput(createSolarSystemString())" data-valid = false>
 							<input type="number" class = "address" id = "symbol2" placeholder = 2 onchange = "drawOutput(createSolarSystemString())" data-valid = false>
@@ -78,7 +78,7 @@
 							<input type="number" id = "symbol7" placeholder = 7 onchange = "drawOutput(createSolarSystemString())" data-valid = false>
 						</div>
 						<div class = "clearfix">
-							<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>randomizable</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Whether the Address may be randomized when Address randomization is enabled in the config</span> </div>
+							<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>randomizable</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Whether the Address may be randomized when Address randomization is enabled in the config</span> </div>
 							<div id = "inputType" style = "color:#cb6b1f"><b>boolean</b></div>
 							<button class = "boolButton" id = "randomizable" name = "randomizable", style = "width:48px" value = true onclick = "toggleButton(this)">true</button>
 						</div>
@@ -87,22 +87,22 @@
 				
 				<!-- Address List -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>addresses</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Solar System's Addresses inside different Galaxies</span> </div>
+					<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>addresses</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Solar System's Addresses inside different Galaxies</span> </div>
 					<div class = "multiInput">
 						<ul id = "addressList" class = "sortable-list">
 							<li class = "item">
 								<div class = "clearfix">
-									<div id = "inputName" class = "tooltip" style = "min-height:92px"> <div id = "info">ⓘ</div> <b>address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">The Extragalactic Address of this Solar System and whether it can be randomized</span> </div>
+									<div id = "inputName" class = "tooltip" style = "min-height:92px"> <div id = "info"><sup>?</sup></div> <b>address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">The Extragalactic Address of this Solar System and whether it can be randomized</span> </div>
 									<div class = "listMultiInput">
 										<!-- Galaxy -->
 										<div class = "clearfix">
-											<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>galaxy</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">The galaxy this Solar System is a part of</span> </div>
+											<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>galaxy</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">The galaxy this Solar System is a part of</span> </div>
 											<div id = "inputType" style = "color:#00aaff"><b>Resource Location</b></div>
 											<input type = "text" id = "galaxy" name = "galaxy" style = "min-width:260px" placeholder = "namespace:galaxy" onchange = "drawOutput(createSolarSystemString())" data-valid = false>
 										</div>
 										<!-- Address -->
 										<div class="clearfix">
-											<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Numerical values of the symbols in the Address, each number must be unique</span> </div>
+											<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>address</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Numerical values of the symbols in the Address, each number must be unique</span> </div>
 											<div id = "inputType" style = "color:#cb6b1f"><b>int[ ]</b></div>
 											<input type="number" class = "address" id = "symbol1" placeholder = 1 onchange = "drawOutput(createSolarSystemString())" data-valid = false>
 											<input type="number" class = "address" id = "symbol2" placeholder = 2 onchange = "drawOutput(createSolarSystemString())" data-valid = false>
@@ -113,7 +113,7 @@
 										</div>
 										<!-- Randomizable -->
 										<div class="clearfix">
-											<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>randomizable</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Whether the Address may be randomized when Address randomization is enabled in the config</span> </div>
+											<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>randomizable</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Whether the Address may be randomized when Address randomization is enabled in the config</span> </div>
 											<div id = "inputType" style = "color:#cb6b1f"><b>boolean</b></div>
 											<button class = "boolButton" id = "randomizable" name = "randomizable", style = "width:48px" value = true onclick = "toggleButton(this)">true</button>
 										</div>
@@ -128,11 +128,11 @@
 				
 				<!-- Dimension List -->
 				<div class = "clearfix">
-					<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>dimensions</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Dimensions that are part of this Solar System</span> </div>
+					<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>dimensions</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Dimensions that are part of this Solar System</span> </div>
 					<div class = "multiInput">
 						<ul id = "dimensionList" class = "sortable-list">
 							<li class = "item">
-								<div id = "inputName" class = "tooltip"> <div id = "info">ⓘ</div> <b>dimension</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Dimension that's a part of this Solar System</span> </div>
+								<div id = "inputName" class = "tooltip"> <div id = "info"><sup>?</sup></div> <b>dimension</b> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Dimension that's a part of this Solar System</span> </div>
 								<div id = "inputType" style = "color:#00aaff"><b>Resource Location</b></div>
 								<input type = "text" class = "listInput" id = "dimension" name = "dimension" placeholder = "namespace:dimension" onchange = "drawOutput(createSolarSystemString())" data-valid = false>
 								<button class = "removeButton" onclick = "removeDimension(this)">Remove</button>

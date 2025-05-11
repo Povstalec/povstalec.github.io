@@ -124,7 +124,7 @@ function isResourceLocationValid(resourceLocation)
 
 function isSymbolValid(symbol)
 {
-	if(symbol == null || symbol <= 0)
+	if(isNaN(symbol) || symbol == null || symbol <= 0)
 		return false;
 	
 	return true;
