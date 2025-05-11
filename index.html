@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Datapack Generation</title>
+		
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="tooltip.css">
+	</head>
+
+	<body style="background-color:#1a1a1a; font-family: Arial">
+		
+		<div class="topDiv">
+		
+			<div class="dropdown">
+				<button class="dropButton" onclick="dropdownFunction()" id="dropdownButton"> Object Type <i class="fa fa-caret-down"></i> </button>
+				<div class="dropdown-content" id="objectDropdown">
+					<button onClick="location.href='sgjourney/solar_system.html';" value="Go to Solar System edit screen" />Solar System</button>
+					<button onClick="galaxy()">Galaxy</button>
+					<button onClick="address()">Address</button>
+					<button onClick="pointOfOrigin()">Point of Origin</button>
+					<button onClick="symbols()">Symbols</button>
+					<button onClick="symbolSet()">Symbol Set</button>
+					<button onClick="stargateVariant()">Stargate Variant</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tooltip">ⓘ
+			<span class="tooltiptext">Tooltip text123456789</span>
+		</div>
+
+		<div class="canvasDiv">
+			<!-- <canvas id='fractal' width='800' height='800' style='border:1px solid black; position:relative; left:50px; top:50px;'></canvas> -->
+			<canvas id='fractal' width='800' height='800' style='border:1px solid black'></canvas>
+		</div>
+		
+		<script src="scripts/dropdown.js"></script>
+		
+	</body>
+</html>

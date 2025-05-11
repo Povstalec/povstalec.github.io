@@ -1,0 +1,297 @@
+.topDiv
+{
+	background-color:#00a6a6;
+	height: 120px;
+}
+
+.canvasDiv
+{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+}
+
+.dropdown
+{
+	width: 160px;
+	height: 120px;
+	float: left;
+	overflow: hidden;
+}
+
+.dropButton
+{
+	width: 160px;
+	height: 120px;
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	background-color: #3fced0;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown:hover .dropButton, .dropButton:focus
+{
+	background-color: #00fbff;
+}
+
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+	z-index: 1;
+}
+
+.dropdown-content button
+{
+	border: none;
+	float: none;
+	color: black;
+	width: 160px;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content button:hover
+{
+	background-color: #ddd;
+}
+
+.show
+{
+	display: block;
+}
+
+.clearfix
+{
+	padding: 10px;
+	display: flex;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#wrapper
+{
+	margin: auto;
+	text-align: center;
+}
+
+#inputFields
+{
+	width: 40%;
+	padding: 20px;
+	border: 2px solid #5f5f5f;
+	border-radius: 5px;
+	background-color: #1a1a1a;
+	margin: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#jsonDisplay
+{
+	width: 40%;
+	padding: 5px;
+	border: 2px solid #5f5f5f;
+	border-radius: 5px;
+	background-color: #2a2a2a;
+	color: #ffffff;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+#info
+{
+    float: left;
+	padding-right: 5px;
+}
+
+#inputName
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #5f5f5f;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #1a1a1a;
+    float: left;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Courier New";
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#inputType
+{
+	min-height: 22px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #5f5f5f;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: #1a1a1a;
+    float: left;
+	text-align: center;
+	font-size: 16px;
+}
+
+.multiInput
+{
+	min-height: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #5f5f5f;
+	border-left: 0px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color:#1a1a1a;
+	color: #ffffff;
+	text-align: left;
+    float: left;
+}
+
+.listMultiInput
+{
+	min-height: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #5f5f5f;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	text-align: left;
+}
+
+input
+{
+	min-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #5f5f5f;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #2a2a2a;
+	color: #ffffff;
+	text-align: left;
+	font-size: 16px;
+	font-family: "Courier New";
+}
+
+input[data-valid=false]
+{
+	background-color: #ff0000;
+}
+
+input.listInput
+{
+	border-right: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+input.address
+{
+	border-right: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+input[type=text]:focus
+{
+	background-color: #3a3a3a;
+}
+
+input[type=number]
+{
+	width: 50px;
+}
+
+li
+{
+	padding: 5px;
+}
+
+button.boolButton
+{
+	min-height: 24px;
+	border: 1px solid #5f5f5f;
+	background-color: #ff7d00;
+	color: #000000;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+    float: right;
+}
+
+button.boolButton[value=true]
+{
+	background-color: #0073ff;
+	color: #ffffff;
+}
+
+button.boolButton[value=true]:hover
+{
+	background-color: #00a6ff;
+}
+
+button.boolButton[value=false]:hover
+{
+	background-color: #ffa600;
+}
+
+button.addButton
+{
+	width:100%;
+	border-radius: 5px;
+	border: 1px solid #1f7cc2;
+	background-color:#00aaff;
+}
+
+button.addButton:hover
+{
+	border: 1px solid #1f7cc2;
+	background-color:#1f8bdc;
+}
+
+button.removeButton
+{
+	min-height: 24px;
+	border: 1px solid #5f5f5f;
+	background-color: #cd3838;
+	color: #ffffff;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+    float: right;
+}
+
+button.removeButton:hover
+{
+  background-color: #9f2323;
+}
+
+.sortable-list
+{
+	list-style-type: none;
+}
