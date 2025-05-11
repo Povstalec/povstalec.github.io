@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Galaxy</title>
+		
+		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" type="text/css" href="../tooltip.css">
+	</head>
+
+	<body style="background-color:#1a1a1a; font-family: Arial">
+		
+		<div class="topDiv">
+		
+			<div class="dropdown">
+				<button class="dropButton" onClick="location.href='../index.html';"> Home <i class="fa fa-caret-down"></i> </button>
+			</div>
+			
+			<div class="dropdown">
+				<button class="dropButton" onclick="dropdownFunction()" id="dropdownButton"> Stargate Journey <i class="fa fa-caret-down"></i> </button>
+				<div class="dropdown-content" id="objectDropdown">
+					<button onClick="location.href='solar_system.html';">Solar System</button>
+					<button onClick="location.href='galaxy.html';">Galaxy</button>
+					<button onClick="location.href='address_table.html';">Address Table</button>
+					<button onClick="location.href='point_of_origin.html';">Point of Origin</button>
+					<button onClick="location.href='symbols.html';">Symbols</button>
+					<button onClick="location.href='symbol_set.html';">Symbol Set</button>
+					<!--<button onClick="location.href='point_of_origin.html';">Stargate Variant</button>-->
+				</div>
+			</div>
+		</div>
+		
+		<div class = "clearfix">
+			<div id = "inputName"> <b>JSON File Name</b> </div>
+			<input type="text" id = "fileName" name = "fileName" placeholder = "filename">
+			<button class = "saveButton">Save File</button>
+		</div>
+		
+		<div id = "wrapper">
+			<div id = "inputFields">
+				<!-- Galaxy Name -->
+				<div class = "clearfix">
+					<div id = "inputName" class = "tooltip"> <b>name</b> <div id = "info"><sup>(?)</sup></div> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Name of the Galaxy is used for translations</span> </div>
+					<div id = "inputType" style = "color:#00aaff"><b>String</b></div>
+					<input type = "text" id = "name" name = "name" style = "min-width:300px" placeholder = "galaxy.namespace.name" data-valid = false>
+				</div>
+				
+				<!-- Galaxy Type -->
+				<div class = "clearfix">
+					<div id = "inputName" class = "tooltip"> <b>type</b> <div id = "info"><sup>(?)</sup></div> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Type of the Galaxy, specifying its size</span> </div>
+					<div id = "inputType" style = "color:#00aaff"><b>Resource Location</b></div>
+					<input type = "text" id = "galaxy_type" name = "galaxy_type" style = "min-width:260px" placeholder = "namespace:galaxy_type" data-valid = false>
+				</div>
+				
+				<!-- Default Symbols -->
+				<div class = "clearfix">
+					<div id = "inputName" class = "tooltip"> <b>default_symbols</b> <div id = "info"><sup>(?)</sup></div> <span class = "tooltiptext" style = "width:auto; padding:5px; min-width: 400px; font-family: Arial">Default Symbols present within the Galaxy</span> </div>
+					<div id = "inputType" style = "color:#00aaff"><b>Resource Location</b></div>
+					<input type = "text" id = "default_symbols" name = "default_symbols" style = "min-width:260px" placeholder = "namespace:default_symbols" data-valid = false>
+				</div>
+			</div>
+			
+			<div id = "jsonDisplay">
+				<div class = "output"></div>
+			</div>
+		</div>
+
+		<script src="../scripts/dropdown.js"></script>
+		<script src="../scripts/input.js"></script>
+		<script src="../scripts/output.js"></script>
+		<script src="../scripts/sgjourneyJson.js"></script>
+		<script src="scripts/galaxy.js"></script>
+		
+	</body>
+</html>

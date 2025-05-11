@@ -1,7 +1,7 @@
 .topDiv
 {
 	background-color:#00a6a6;
-	height: 120px;
+	height: 60px;
 }
 
 .canvasDiv
@@ -17,7 +17,7 @@
 .dropdown
 {
 	width: 160px;
-	height: 120px;
+	height: 100%;
 	float: left;
 	overflow: hidden;
 }
@@ -25,7 +25,7 @@
 .dropButton
 {
 	width: 160px;
-	height: 120px;
+	height: 100%;
 	cursor: pointer;
 	font-size: 16px;  
 	border: none;
@@ -123,8 +123,8 @@
 
 #inputName
 {
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 0px;
 	border: 1px solid #5f5f5f;
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
