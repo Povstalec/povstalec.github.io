@@ -1,6 +1,17 @@
+const output = document.querySelector('.output');
+const saveButton = document.querySelector('.saveButton');
+const fileName = document.getElementById('fileName');
+
 const name = document.getElementById('name');
 const galaxy_type = document.getElementById('galaxy_type');
 const default_symbols = document.getElementById('default_symbols');
+
+
+
+saveButton.onclick = () =>
+{
+	saveJSON(fileName.value, createGalaxyString());
+}
 
 name.addEventListener("change", () => { drawOutput(createGalaxyString()); });
 galaxy_type.addEventListener("change", () => { drawOutput(createGalaxyString()); });

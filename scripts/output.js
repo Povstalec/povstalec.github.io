@@ -1,12 +1,3 @@
-const output = document.querySelector('.output');
-const saveButton = document.querySelector('.saveButton');
-const fileName = document.getElementById('fileName');
-
-saveButton.onclick = () =>
-{
-	saveJSON(fileName.value, createSolarSystemJSON());
-}
-
 function saveJSON(fileName, fileContent)
 {
 	var hiddenElement = document.createElement('a');

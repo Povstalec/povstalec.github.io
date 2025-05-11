@@ -1,3 +1,7 @@
+const output = document.querySelector('.output');
+const saveButton = document.querySelector('.saveButton');
+const fileName = document.getElementById('fileName');
+
 const name = document.getElementById('name');
 const symbols = document.getElementById('symbols');
 const point_of_origin = document.getElementById('point_of_origin');
@@ -7,10 +11,21 @@ const extragalactic_address = document.getElementById('extragalactic_address');
 const dimensionList = document.getElementById('dimensionList');
 const addressList = document.getElementById('addressList');
 
+
+
+saveButton.onclick = () =>
+{
+	saveJSON(fileName.value, createSolarSystemString());
+}
+
+
+
 name.addEventListener("change", () => { drawOutput(createSolarSystemString()); });
 symbols.addEventListener("change", () => { drawOutput(createSolarSystemString()); });
 point_of_origin.addEventListener("change", () => { drawOutput(createSolarSystemString()); });
 symbol_prefix.addEventListener("change", () => { drawOutput(createSolarSystemString()); });
+
+
 
 function createSolarSystemString()
 {
